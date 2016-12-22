@@ -60,7 +60,6 @@ module.exports = function(request,response){
         dirName = pathName.match(/^\/[a-zA-Z0-9_-]*\//) || [];
     dirName = dirName[0] || "";
     dirName = dirName.substr(1, dirName.length-2);
-
     //-----------------------------------------
     //api接口   只支持一层的名字解析
     if(dirName.toLowerCase() == "api"){
@@ -97,7 +96,6 @@ module.exports = function(request,response){
     //获取返回时的type
     type = (hasType)? type : "html";
     type = getFileType(type);
-
 
     //返回资源
     responseStaticResources(_url,type,response);

@@ -16,11 +16,15 @@
 module.exports = function(endTag){
 	var type=null;
 	switch(endTag){
+
 		case 'html' :
 			type = 'text/html; charset=UTF-8';
 			break;
 		case 'htm' :
 			type = 'text/html; charset=UTF-8';
+			break;
+		case 'manifest':
+			type = 'text/cache-manifest; charset=UTF-8';
 			break;
 		case 'js' :
 			type = 'application/javascript; charset="UTF-8"';
@@ -42,9 +46,6 @@ module.exports = function(endTag){
 			break;
 		case 'txt' :
 			type = 'text/plain; charset="UTF-8"';
-			break;
-		case 'manifest' :
-			type = 'text/cache-manifest; charset="UTF-8"';
 			break;
 		case 'zip' :
 			type = 'application/zip;charset="UTF-8"';

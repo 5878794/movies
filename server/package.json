@@ -7,16 +7,17 @@
     "url": ""
   },
   "license": "BSD-3-Clause",
-  "dependencies": {
-    "request":"",
-    "cheerio":"",
-    "iconv":""
-  },
   "scripts": {
     "start": "node server.js"
   },
   "name": "bens",
   "version": "1.0.0",
   "main": "server.js",
-  "author": ""
+  "author": "",
+  "devDependencies": {
+    "cheerio": "",
+    "iconv": "",
+    "ioffline": "^0.1.5",
+    "request": ""
+  }
 }
