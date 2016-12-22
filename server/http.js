@@ -1,13 +1,11 @@
 
 
-
 var http = require('http'),        // Http服务器API
+	setting = require("./setting"),
 	rout = require("./rout");
 
-
 var server = new http.Server(),    // 创建新的HTTP服务器
-	port = 7777;
-
+	port = setting.serverPort;
 
 
 server.listen(port);            // 监听端口8000
