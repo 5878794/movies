@@ -81,9 +81,10 @@ PAGE = {
 		});
 
 
-
 		$$("#zz").myclickok(function(){
-			_this.hideZZ();
+			setTimeout(function(){
+				_this.hideZZ();
+			},200)
 		});
 
 		var icons = $("#zz").find(".item");
@@ -101,7 +102,10 @@ PAGE = {
 	showZZ:function(){
 		if(this.isShow){return;}
 		$("#zz").css({display:"block"});
-		$("#zz").find(".list").css3({transform:"translateX(0)"});
+		setTimeout(function(){
+			$("#zz").find(".list").cssAnimate({transform:"translateX(0)"},500);
+		},100)
+
 	},
 	hideZZ:function(){
 		$("#zz").css({display:"none"});
