@@ -1,0 +1,22 @@
+{
+  "description": "templete",
+  "repository": {},
+  "Author": {
+    "name": "bens",
+    "email": "5878794@qq.com",
+    "url": ""
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "request":"",
+    "cheerio":"",
+    "iconv":""
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "bens",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": ""
+}
