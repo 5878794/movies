@@ -11,7 +11,8 @@ module.exports = function(url,success,error){
         json:true,
         gzip: true,
         headers: {
-            'Content-Type': 'text/html; charset=UTF-8'
+            'Content-Type': 'text/html; charset=UTF-8',
+            'User-Agent':'request'
         }
     },function(err,_response,body){
         if(!err  && _response.statusCode == 200){
